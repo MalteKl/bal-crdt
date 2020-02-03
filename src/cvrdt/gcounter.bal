@@ -39,7 +39,12 @@ public type GCounter object{
     public function merge(map<int> incoming) {
 
         foreach var nodeId in incoming.keys() {
-            self.count[nodeId] = ints:max(self.count.get(nodeId), incoming.get(nodeId));
+            if(self.count.hasKey(nodeId)){
+                self.count[nodeId] = ints:max(self.count.get(nodeId), incoming.get(nodeId));
+            }
+            else{
+                self.count[nodeId] = incoming.get(nodeId);
+            }
         }
     }
 };
