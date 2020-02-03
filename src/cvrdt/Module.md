@@ -1,5 +1,13 @@
-Prints "Hello World!" with a main function.
+Experimental implementation of state based CRDTs (CvRDT)
 [//]: # (above is the module summary)
 
 # Module Overview
-Prints "Hello World!" as the output to the command line using a main function.
+Basic implementation of convergent replicated data types.
+
+## Supported types
+
+### GCounter
+Simple grow-only counter. Implemented by using a vector clock.
+
+#### Usage
+
