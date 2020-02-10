@@ -1,0 +1,9 @@
+org_name = "malte"
+version = "0.1.0"
+lockfile_version = "1.0.0"
+ballerina_version = "1.1.0"
+
+[[imports."malte/node:0.1.0"]]
+org_name = "malte"
+name = "cvrdt"
+version = "0.1.0"
